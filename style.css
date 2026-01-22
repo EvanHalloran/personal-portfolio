@@ -1,0 +1,348 @@
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(247, 247, 247);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+header {
+  height: 77px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(220, 220, 220);
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+.header-container {
+  width: 87%;
+  max-width: 1280px;
+  height: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.logo {
+  height: 45px;
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 19.2;
+}
+
+a {
+  text-decoration: none;
+  font-family: Jost;
+  font-size: 19.2px;
+  color: rgb(35, 35, 35);
+  font-weight: 400;
+  position: relative;
+  margin-top: 0;
+  display: inline;
+}
+
+a span {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  transition: background-size 0.25s ease;
+}
+
+a:hover span {
+  background-size: 100% 2px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 1;
+}
+
+.papers {
+  font-weight: 500;
+}
+
+.notes {
+  font-weight: 500;
+  margin-left: 60px;
+  margin-right: 15px;
+}
+
+.card {
+  background-color: white;
+  width: 87%;
+  max-width: 1280px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 350px 1fr;
+  border-radius: 5px;
+  margin-top: 150px;
+}
+
+.headshot {
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.contact-info {
+  font-family: Jost;
+  font-size: 19.2px;
+  color: rgb(35, 35, 35);
+  font-weight: 400;
+  margin-left: 70px;
+  padding-top: 0;
+  margin-top: -25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.name-contact {
+  margin-top: 130px; 
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 19.2;
+}
+
+.text {
+  font-family: Jost;
+  font-size: 19.2px;
+  color: rgb(35, 35, 35);
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 50px;
+  font-family: Jost;
+  font-size: 19.2px;
+  color: rgb(35, 35, 35);
+  font-weight: 400;
+  line-height: 35px;
+  max-width: 1144px;
+}
+
+.about-me {
+  width: 100%;
+  margin-top: 30px;
+  /*box-sizing: border-box;*/
+}
+
+.about-me-text {
+  font-size: 48px;
+}
+
+.projects-text {
+  font-size: 30px;
+}
+
+.triangle-marker {
+  list-style: none; 
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.triangle-marker li {
+  position: relative;
+  margin-left: 0.6rem;
+}
+
+.triangle-marker li::before {
+  content: '▸';
+  position: absolute;
+  left: -1.2rem;
+  top: 0.3rem;
+  color: rgb(35, 35, 35);
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+.bottom{
+  height: 90px;
+  background-color: rgb(35, 35, 35);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: auto;
+}
+
+.bottom-text {
+  font-family: Jost;
+  font-size: 19.2px;
+  font-weight: 400;
+  color: rgb(250, 250, 250);
+}
+
+@media (max-width: 600px) {
+  .body {
+    background-color: rgb(240, 240, 240);
+  }
+  main {
+    margin-top: 0px;
+  }
+  header {
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom-color: rgb(220, 220, 220);
+  }
+  .name {
+    font-size: 18px;
+  }
+  .logo {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .links {
+    font-size: 18px;
+  }
+  .papers {
+    font-size: 15px;
+  }
+  .notes {
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  a {
+    font-size: 18px;
+  }
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    align-items: stretch;
+    box-sizing: border-box;
+    height: 500px;
+    margin-top: 210px;
+  }
+  .headshot {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .contact-info {
+    font-family: Jost;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-left: 0px;
+    margin-top: 22px;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-right: auto;
+    height: auto;
+  }
+  .name-contact {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .about-me-text {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .projects-text {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .papers-text {
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .triangle-marker {
+    list-style: none; 
+    padding-left: 1.0rem;
+    margin: 0;
+  }
+  .triangle-marker li {
+    position: relative;
+    margin-left: 0.6rem;
+  }
+  .triangle-marker li::before {
+    content: '▸';
+    position: absolute;
+    left: -0.8rem;
+    top: 0.1em;
+    color: rgb(35, 35, 35);
+    font-size: 1em;
+    line-height: 1;
+  }
+  .bottom{
+    height: 70px;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .bottom-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card {
+    grid-template-columns: 400px 1fr;
+  }
+}
